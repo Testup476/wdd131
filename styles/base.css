@@ -1,0 +1,158 @@
+.Container {
+    display: grid;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-columns: repeat(10, 1fr);
+    height: 100vh;
+}
+
+.Header-content {
+    grid-column: 1 / 11;
+    grid-row: 1 / 3;
+    background-color: #555;
+}
+
+.Header-content p {
+    color: aliceblue;
+    padding: 20px;
+    font-family: Arial, sans-serif
+}
+
+.Header-content h1 {
+    text-align: center;
+}
+
+.Nav-barre {
+    grid-column: 1/11;
+    grid-row: 3/ 4;
+    background-color: #040404;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Nav-barre ul {
+    display: flex;
+    list-style-type: none;
+    color: white;
+    justify-content: space-around;
+    font-size: 20px;
+    border-radius: 20%;
+}
+
+.Nav-barre ul li {
+    color: white;
+    border-radius: 10px;
+    justify-items: center;
+}
+
+.Nav-barre li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    padding: 5px 10px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Nav-barre ul li a:hover {
+    background-color: #555;
+    border-radius: 10px;
+}
+
+main {
+    display: grid;
+    grid-column: 2 / 10;
+    grid-row: 5 / 10;
+    gap: 50px;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card1 {
+    background-color: whitesmoke;
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+}
+
+
+.Card1,
+.Card2 {
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 70px;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+.Card2 {
+    background-color: whitesmoke;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    width: 80%;
+    height: auto;
+}
+
+.Card2,
+h1 {
+    text-align: center;
+}
+
+.Card2,
+ul li {
+    text-align: left;
+}
+
+footer {
+    display: flex;
+    background-color: #555;
+}
+
+footer,
+.p1 {
+    align-items: center;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content p,
+    .image,
+    .image2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image,
+    .image2 {
+        margin: 10px 0;
+    }
+}
