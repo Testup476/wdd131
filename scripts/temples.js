@@ -1,9 +1,14 @@
-document.getElementById("currentyear").textContent = "©" + new Date().getFullYear();
-document.getElementById("lastModified").textContent = "Last modified : " + document.lastModified;
+document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.getElementById('menuIcon');
+    const menuList = document.getElementById('menuList');
 
-const menuIcon = document.getElementById("menuIcon");
-let menuList = document.getElementById("menuList");
+    function toggleMenu() {
 
-menuIcon.addEventListener("click", function () {
-    menuList.className.toggle("active");
+        menuList.classList.toggle('active');
+        menuIcon.classList.toggle('active');
+    }
+
+    if (menuIcon) {
+        menuIcon.addEventListener('click', toggleMenu);
+    }
 });
