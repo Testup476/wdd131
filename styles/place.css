@@ -6,7 +6,7 @@
     --value: 0.8;
 }
 
-* main {
+main {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -74,7 +74,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(/images/hero.webp);
+    background-image: url(/images/hero.webp);
     background-size: cover;
     background-repeat: no-repeat;
 }
