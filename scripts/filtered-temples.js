@@ -80,7 +80,7 @@ function renderTemples(templesArray) {
 
     templesArray.forEach(temple => {
         const templeCard = document.createElement("div");
-        templeCard.classList.add("temple-card");
+        templeCard.classList.add("temple-card"); // add a class with a name temple-card to the new div created.
 
         const templeContent = `
       <h2>${temple.templeName}</h2>
@@ -90,8 +90,8 @@ function renderTemples(templesArray) {
       <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
     `;
 
-        templeCard.innerHTML = templeContent;
-        templeContainer.appendChild(templeCard);
+        templeCard.innerHTML = templeContent; // To the template-card div created we append the values of the templeContent from our array
+        templeContainer.appendChild(templeCard); // Append the templateCard to the TempleContaire class
     });
 }
 
