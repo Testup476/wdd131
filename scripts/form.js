@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const productSelect = document.getElementById("product-name");
 
-    // Placeholder option
+   
     const placeholderOption = document.createElement("option");
     placeholderOption.value = "";
     placeholderOption.disabled = true;
